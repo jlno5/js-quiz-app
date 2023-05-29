@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSIZZ | JavaScript Quiz Profi</title>
+
+    <link rel="stylesheet" href="../../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section>
+        <div class="centered">
+            <div class="container">
+                <nav class="navbar">
+                    <ul>
+                        <!-- <li><img src="img/logo.png" alt="Logo"></li> -->
+                        <li><a href="../../index.html">Auswahl</a></li>
+                        <li><a href="../../bestenliste.html">Bestenliste</a></li>
+                    </ul>
+                </nav>
+            </div>
+    
+            <div class="container">
+                <div class="content">
+                    <h1>JavaScript Quiz</h1>
+                    <p class="addition">Level 3: Profi</p>
+                    <form class="quiz-form">
+                        <!-- Frage 1 -->
+                        <div class="quiz-container">
+                            <h3 class="question">Was ergibt diese Kalkulation in JavaScript?</h3>
+                            <p class="question-code">0.2+0.1</p>
+                            <!-- correct answer -->
+                            <div class="q1 correct-code">
+                                <label for="s1" class="">L&ouml;sung:</label>
+                                <input type="text" id="s1" value="0.30000000000000004" disabled>
+                            </div>
+                            <!-- Answer field for text -->
+                            <div class="">
+                                <label for="o1" class="hidden-answer">0[,|.]30000000000000004</label>
+                                <input type="text" name="q1" id="o1">
+                            </div>
+                            <p id="q1"></p>
+                        </div>
+
+                        <!-- Frage 2 -->
+                        <div class="quiz-container">
+                            <h3 class="question">Welche Aussage über den Unterschied zwischen let, const und var in JavaScript ist korrekt?</h3>
+                            <p class="question-addition"></p>
+                            <!-- Option 1 -->
+                            <div class="flex">
+                                <input type="radio" name="q2" id="o2">
+                                <label for="o2" class="">let und const werden verwendet, um Variablen zu deklarieren, während var für Funktionen reserviert ist.</label>
+                            </div>
+                            <!-- Option 2 -->
+                            <div class="flex">
+                                <input type="radio" name="q2" id="o3" class="correct">
+                                <label for="o3" class="">let und const ermöglichen Block Scope, während var Funktions Scope verwendet.</label>
+                            </div>
+                            <!-- Option 3 -->
+                            <div class="flex">
+                                <input type="radio" name="q2" id="o4">
+                                <label for="o4">let und const können nach ihrer Initialisierung nicht neu zugewiesen werden, var hingegen schon.</label>
+                            </div>
+                            <!-- Option 4 -->
+                            <div class="flex">
+                                <input type="radio" name="q2" id="o5">
+                                <label for="o5">let und var können als Konstanten verwendet werden, während const nur für Variablen gilt.</label>
+                            </div>
+                            <p id="q2"></p>
+                        </div>
+
+                        <!-- Frage 3 -->
+                        <div class="quiz-container">
+                            <h3 class="question">Welche Aussage über Promises in JavaScript ist korrekt?</h3>
+                            <p class="question-code"></p>
+                            <!-- Option 1 -->
+                            <div class="flex">
+                                <input type="radio" name="q3" id="o6">
+                                <label for="o6" class="">Promises sind eine Art von Datenstrukturen in JavaScript.</label>
+                            </div>
+                            <!-- Option 2 -->
+                            <div class="flex">
+                                <input type="radio" name="q3" id="o7" class="correct">
+                                <label for="o7" class="">Promises werden verwendet, um asynchronen Code zu schreiben und das Callback-Hell-Problem zu vermeiden.</label>
+                            </div>
+                            <!-- Option 3 -->
+                            <div class="flex">
+                                <input type="radio" name="q3" id="o8">
+                                <label for="o8">Promises sind in JavaScript obsolet und wurden durch Async/Await ersetzt.</label>
+                            </div>
+                            <!-- Option 4 -->
+                            <div class="flex">
+                                <input type="radio" name="q3" id="o9">
+                                <label for="o9">Promises werden verwendet, um Schleifen in JavaScript zu steuern.</label>
+                            </div>
+                            <p id="q3"></p>
+                        </div>
+
+                        <!-- Frage 4 -->
+                        <div class="quiz-container">
+                            <h3 class="question">Welche Methode wird verwendet, um eine Funktion in JavaScript zu binden?</h3>
+                            <p class="question-code"></p>
+                            <!-- Option 1 -->
+                            <div class="flex">
+                                <input type="radio" name="q4" id="o10" class="correct">
+                                <label for="o10" class="">bind()</label>
+                            </div>
+                            <!-- Option 2 -->
+                            <div class="flex">
+                                <input type="radio" name="q4" id="o11">
+                                <label for="o11" class="">call()</label>
+                            </div>
+                            <!-- Option 3 -->
+                            <div class="flex">
+                                <input type="radio" name="q4" id="o12">
+                                <label for="o12">apply()</label>
+                            </div>
+                            <!-- Option 4 -->
+                            <div class="flex">
+                                <input type="radio" name="q4" id="o13">
+                                <label for="o13">attach()</label>
+                            </div>
+                            <p id="q4"></p>
+                        </div>
+
+                        <!-- Frage 5 -->
+                        <div class="quiz-container">
+                            <h3 class="question">Welche Aussage über die Verwendung von "===" im Vergleich zu "==" in JavaScript ist korrekt?</h3>
+                            <p class="question-code"></p>
+                            <!-- Option 1 -->
+                            <div class="flex">
+                                <input type="radio" name="q5" id="o14">
+                                <label for="o14" class="">=== führt eine Typumwandlung durch, während == dies nicht tut</label>
+                            </div>
+                            <!-- Option 2 -->
+                            <div class="flex">
+                                <input type="radio" name="q5" id="o15" class="correct">
+                                <label for="o15" class="">=== vergleicht nur den Wert, während == den Wert und den Typ vergleicht</label>
+                            </div>
+                            <!-- Option 3 -->
+                            <div class="flex">
+                                <input type="radio" name="q5" id="o16">
+                                <label for="o16">=== und == k&ouml;nnen als Synonyme verwendet werden</label>
+                            </div>
+                            <!-- Option 4 -->
+                            <div class="flex">
+                                <input type="radio" name="q5" id="o17">
+                                <label for="o17" class="">=== wird verwendet, um eine Funktion in JavaScript zu deklarieren.</label>
+                            </div>
+                            <p id="q5"></p>
+                        </div>
+
+                        <!-- Frage 6 -->
+                        <div class="quiz-container">
+                            <h3 class="question">Welche Aussage über den Unterschied zwischen einer Arrow-Funktion (=>) und einer normalen Funktion in JavaScript ist korrekt?</h3>
+                            <p class="question-code"></p>
+                            <!-- Option 1 -->
+                            <div class="flex">
+                                <input type="radio" name="q6" id="o18">
+                                <label for="o18" class="">Arrow-Funktionen können keine Rückgabewerte haben.</label>
+                            </div>
+                            <!-- Option 2 -->
+                            <div class="flex">
+                                <input type="radio" name="q6" id="o19" class="correct">
+                                <label for="o19" class="">Arrow-Funktionen haben immer einen impliziten Rückgabewert.</label>
+                            </div>
+                            <!-- Option 3 -->
+                            <div class="flex">
+                                <input type="radio" name="q6" id="o20">
+                                <label for="o20">Arrow-Funktionen können nicht als Methoden in Objekten verwendet werden.</label>
+                            </div>
+                            <p id="q6"></p>
+                        </div>
+
+                        <!-- Summary -->
+                        <div class="" id="summary-container">
+                            <p id="summary-message"></p>
+                        </div>
+
+                        <button type="submit" class="quiz-container" onclick="quizSubmition(event)">Abgeben</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://kit.fontawesome.com/bad7f7f5d4.js" crossorigin="anonymous"></script>
+    <script src="../../js/solveQuiz.js"></script>
+    <script>
+        const quizID = 'JS Quiz Level 3';
+    </script>
+</body>
+</html>

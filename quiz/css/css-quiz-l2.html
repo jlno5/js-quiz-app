@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSIZZ | CSS Quiz Fortgeschritten</title>
+
+    <link rel="stylesheet" href="../../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section>
+        <div class="centered">
+            <div class="container">
+                <nav class="navbar">
+                    <ul>
+                        <!-- <li><img src="img/logo.png" alt="Logo"></li> -->
+                        <li><a href="../../index.html">Auswahl</a></li>
+                        <li><a href="../../bestenliste.html">Bestenliste</a></li>
+                    </ul>
+                </nav>
+            </div>
+    
+            <div class="container">
+                <div class="content">
+                    <h1>CSS Quiz</h1>
+                    <p class="addition">Level 2: Fortgeschritten</p>
+                    <form class="quiz-form">
+                        <!-- Frage 1 -->
+                        <div class="quiz-container">
+                            <h3 class="question">Was ist die Regel zu folgendem Codefragment?</h3>
+                            <p class="question-code">@media</p>
+                            <!-- Option 1 -->
+                            <div class="flex">
+                                <input type="radio" name="q1" id="o1" class="correct">
+                                <label for="o1" class="">Sie erm&ouml;glicht es, CSS Regeln nur unter bestimmten Bedingungen anzuwenden.</label>
+                            </div>
+                            <!-- Option 2 -->
+                            <div class="flex">
+                                <input type="radio" name="q1" id="o2">
+                                <label for="o2" class="">Sie erm&ouml;glicht es, die Hintergrundfarbe des Media Elements zu &auml;ndern.</label>
+                            </div>
+                            <!-- Option 3 -->
+                            <div class="flex">
+                                <input type="radio" name="q1" id="o3">
+                                <label for="o3" class="">Sie erm&ouml;glicht es, die Schriftgr&ouml;ße jedes sichtbaren Elementes zu &auml;ndern.</label>
+                            </div>
+                            <!-- Option 4 -->
+                            <div class="flex">
+                                <input type="radio" name="q1" id="o4">
+                                <label for="o4" class="">Sie entfernt sichtbare Elemente vollst&auml;ndig.</label>
+                            </div>
+                            <p id="q1"></p>
+                        </div>
+
+                        <!-- Frage 2 -->
+                        <div class="quiz-container">
+                            <h3 class="question">Was besagt dieser Pseudo-Klassen-Selektor?</h3>
+                            <p class="question-code">:hover</p>
+                            <!-- Option 1 -->
+                            <div class="flex">
+                                <input type="radio" name="q2" id="o5">
+                                <label for="o5" class="">Er w&auml;hlt alle Elemente in einem Bereich aus.</label>
+                            </div>
+                            <!-- Option 2 -->
+                            <div class="flex">
+                                <input type="radio" name="q2" id="o6">
+                                <label for="o6" class="">Er w&auml;hlt alle Elemente der Klasse "hover" aus.</label>
+                            </div>
+                            <!-- Option 3 -->
+                            <div class="flex">
+                                <input type="radio" name="q2" id="o7" class="correct">
+                                <label for="o7">Er w&auml;hlt Elemente, &uuml;ber welchen der Mauszeiger ist, aus.</label>
+                            </div>
+                            <p id="q2"></p>
+                        </div>
+
+                        <!-- Frage 3 -->
+                        <div class="quiz-container">
+                            <h3 class="question">Was ist der Zweck der "margin"-Eigenschaft?</h3>
+                            <p class="question-code"></p>
+                            <!-- Option 1 -->
+                            <div class="flex">
+                                <input type="radio" name="q3" id="o8">
+                                <label for="o8" class="">Sie bestimmt die Schriftart eines Elements.</label>
+                            </div>
+                            <!-- Option 2 -->
+                            <div class="flex">
+                                <input type="radio" name="q3" id="o9">
+                                <label for="o9" class="">Sie bestimmt den Abstand zwischen dem Inhalt des Elements und dem Elementrand.</label>
+                            </div>
+                            <!-- Option 3 -->
+                            <div class="flex">
+                                <input type="radio" name="q3" id="o10" class="correct">
+                                <label for="o10">Sie bestimmt den Abstand zwischen dem Element und umliegenden Elementen.</label>
+                            </div>
+                            <!-- Option 4 -->
+                            <div class="flex">
+                                <input type="radio" name="q3" id="o11">
+                                <label for="o11">Sie bestimmt die Schriftart des Elementes.</label>
+                            </div>
+                            <p id="q3"></p>
+                        </div>
+
+                        <!-- Frage 4 -->
+                        <div class="quiz-container">
+                            <h3 class="question">Wie &auml;ndert man die Schriftfarbe f&uuml;r alle &lt;h1&gt; Elemente?</h3>
+                            <p class="question-code"></p>
+                            <!-- Option 1 -->
+                            <div class="flex">
+                                <input type="radio" name="q4" id="o12">
+                                <label for="o12" class="">h1.all {background-color: #030405;}</label>
+                            </div>
+                            <!-- Option 2 -->
+                            <div class="flex">
+                                <input type="radio" name="q4" id="o13" class="correct">
+                                <label for="o13" class="">h1 {background-color: #030405;}</label>
+                            </div>
+                            <!-- Option 3 -->
+                            <div class="flex">
+                                <input type="radio" name="q4" id="o14">
+                                <label for="o14">all.h1 {background-color: #030405;}</label>
+                            </div>
+                            <p id="q4"></p>
+                        </div>
+
+                        <!-- Frage 5 -->
+                        <div class="quiz-container">
+                            <h3 class="question">Was ist der Unterschied zwischen "id" und "class"?</h3>
+                            <p class="question-code"></p>
+                            <!-- Option 1 -->
+                            <div class="flex">
+                                <input type="radio" name="q5" id="o15">
+                                <label for="o15" class="">"id" und "class" sind lediglich Synonyme</label>
+                            </div>
+                            <!-- Option 2 -->
+                            <div class="flex">
+                                <input type="radio" name="q5" id="o16"  class="correct">
+                                <label for="o16" class="">"id" identifiziert ein Element w&auml;hrend "class" verwendet wird mehrere Elemente zu identifieren.</label>
+                            </div>
+                            <!-- Option 3 -->
+                            <div class="flex">
+                                <input type="radio" name="q5" id="o17">
+                                <label for="o17">"class" identifiziert ein Element w&auml;hrend "id" verwendet wird mehrere Elemente zu identifieren.</label>
+                            </div>
+                            <p id="q5"></p>
+                        </div>
+
+                        <!-- Frage 6 -->
+                        <div class="quiz-container">
+                            <h3 class="question">Welche dieser Layout-Modelle gibt es?</h3>
+                            <p class="question-code"></p>
+                            <!-- Option 1 -->
+                            <div class="flex">
+                                <input type="radio" name="q6" id="o18" class="correct">
+                                <label for="o18" class="">flexbox, flow-root, grid</label>
+                            </div>
+                            <!-- Option 2 -->
+                            <div class="flex">
+                                <input type="radio" name="q6" id="o19">
+                                <label for="o19" class="">flex, inline-table, list</label>
+                            </div>
+                            <!-- Option 3 -->
+                            <div class="flex">
+                                <input type="radio" name="q6" id="o20">
+                                <label for="o20">table, ruby, twice</label>
+                            </div>
+                            <p id="q6"></p>
+                        </div>
+
+                        <!-- Summary -->
+                        <div class="" id="summary-container">
+                            <p id="summary-message"></p>
+                        </div>
+
+                        <button type="submit" class="quiz-container" onclick="quizSubmition(event)">Abgeben</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://kit.fontawesome.com/bad7f7f5d4.js" crossorigin="anonymous"></script>
+    <script src="../../js/solveQuiz.js"></script>
+    <script>
+        const quizID = 'CSS Quiz Level 2';
+    </script>
+</body>
+</html>

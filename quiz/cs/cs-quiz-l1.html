@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSIZZ | C-Sharp Quiz Amateur</title>
+
+    <link rel="stylesheet" href="../../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section>
+        <div class="centered">
+            <div class="container">
+                <nav class="navbar">
+                    <ul>
+                        <!-- <li><img src="img/logo.png" alt="Logo"></li> -->
+                        <li><a href="../../index.html">Auswahl</a></li>
+                        <li><a href="../../bestenliste.html">Bestenliste</a></li>
+                    </ul>
+                </nav>
+            </div>
+    
+            <div class="container">
+                <div class="content">
+                    <h1>C# Quiz</h1>
+                    <p class="addition">Level 1: Amateur</p>
+                    <form class="quiz-form">
+                        <!-- Frage 1 -->
+                        <div class="quiz-container">
+                            <h3 class="question">Wann wurde C-Sharp erfunden?</h3>
+                            <p class="question-code"></p>
+                            <!-- Option 1 -->
+                            <div class="flex">
+                                <input type="radio" name="q1" id="o1">
+                                <label for="o1" class="">1801</label>
+                            </div>
+                            <!-- Option 2 -->
+                            <div class="flex">
+                                <input type="radio" name="q1" id="o2">
+                                <label for="o2" class="">2015</label>
+                            </div>
+                            <!-- Option 3 -->
+                            <div class="flex">
+                                <input type="radio" name="q1" id="o3" class="correct">
+                                <label for="o3" class="">2001</label>
+                            </div>
+                            <!-- Option 4 -->
+                            <div class="flex">
+                                <input type="radio" name="q1" id="o4">
+                                <label for="o4" class="">1955</label>
+                            </div>
+                            <p id="q1"></p>
+                        </div>
+
+                        <!-- Frage 2 -->
+                        <div class="quiz-container">
+                            <h3 class="question">Was ist die richtige Syntax für ein "Hello World"-Programm?</h3>
+                            <p class="question-code"></p>
+                            <!-- Option 1 -->
+                            <div class="flex">
+                                <input type="radio" name="q2" id="o5">
+                                <label for="o5" class="">cout &lt;&lt; 'Hello World';</label>
+                            </div>
+                            <!-- Option 2 -->
+                            <div class="flex">
+                                <input type="radio" name="q2" id="o6">
+                                <label for="o6" class="">System.out.println("Hello World");</label>
+                            </div>
+                            <!-- Option 3 -->
+                            <div class="flex">
+                                <input type="radio" name="q2" id="o7" class="correct">
+                                <label for="o7">Console.WriteLine("Hello World");</label>
+                            </div>
+                            <p id="q2"></p>
+                        </div>
+
+                        <!-- Frage 3 -->
+                        <div class="quiz-container">
+                            <h3 class="question">Kann C# auch als Alias f&uuml;r C++ genutzt werden?</h3>
+                            <p class="question-code"></p>
+                            <!-- Option 1 -->
+                            <div class="flex">
+                                <input type="radio" name="q3" id="o8">
+                                <label for="o8" class="">Ja</label>
+                            </div>
+                            <!-- Option 2 -->
+                            <div class="flex">
+                                <input type="radio" name="q3" id="o9" class="correct">
+                                <label for="o9" class="">Nein</label>
+                            </div>
+                            <p id="q3"></p>
+                        </div>
+
+                        <!-- Frage 4 -->
+                        <div class="quiz-container">
+                            <h3 class="question">Wie sieht ein Kommentar in C# aus?</h3>
+                            <p class="question-code"></p>
+                            <!-- Option 1 -->
+                            <div class="flex">
+                                <input type="radio" name="q4" id="o10">
+                                <label for="o10" class=""># Kommentar</label>
+                            </div>
+                            <!-- Option 2 -->
+                            <div class="flex">
+                                <input type="radio" name="q4" id="o11">
+                                <label for="o11" class="">&lt;!-- Kommentar --&gt;</label>
+                            </div>
+                            <!-- Option 3 -->
+                            <div class="flex">
+                                <input type="radio" name="q4" id="o12" class="correct">
+                                <label for="o12">// Kommentar</label>
+                            </div>
+                            <!-- Option 4 -->
+                            <div class="flex">
+                                <input type="radio" name="q4" id="o13">
+                                <label for="o13">/* Kommentar</label>
+                            </div>
+                            <p id="q4"></p>
+                        </div>
+
+                        <!-- Frage 5 -->
+                        <div class="quiz-container">
+                            <h3 class="question">Welchen Datentyp braucht diese Variable?</h3>
+                            <p class="question-code">... meineVariable = "Hallo Welt";</p>
+                            <!-- Option 1 -->
+                            <div class="flex">
+                                <input type="radio" name="q5" id="o14" class="correct">
+                                <label for="o14" class="">string</label>
+                            </div>
+                            <!-- Option 2 -->
+                            <div class="flex">
+                                <input type="radio" name="q5" id="o15">
+                                <label for="o15" class="">int</label>
+                            </div>
+                            <!-- Option 3 -->
+                            <div class="flex">
+                                <input type="radio" name="q5" id="o16">
+                                <label for="o16" class="">str</label>
+                            </div>
+                            <!-- Option 4 -->
+                            <div class="flex">
+                                <input type="radio" name="q5" id="o17">
+                                <label for="o17">chat</label>
+                            </div>
+                            <p id="q5"></p>
+                        </div>
+
+                        <!-- Frage 6 -->
+                        <div class="quiz-container">
+                            <h3 class="question">Welche Datentypen gibt es alle?</h3>
+                            <p class="question-code"></p>
+                            <!-- Option 1 -->
+                            <div class="flex">
+                                <input type="radio" name="q6" id="o18" class="correct">
+                                <label for="o18" class="">sbyte, byte, uint</label>
+                            </div>
+                            <!-- Option 2 -->
+                            <div class="flex">
+                                <input type="radio" name="q6" id="o19">
+                                <label for="o19" class="">long, ulong, sint</label>
+                            </div>
+                            <!-- Option 3 -->
+                            <div class="flex">
+                                <input type="radio" name="q6" id="o20">
+                                <label for="o20">decimal, bool, ubyte</label>
+                            </div>
+                            <p id="q6"></p>
+                        </div>
+
+                        <!-- Frage 7 -->
+                        <div class="quiz-container">
+                            <h3 class="question">Ist dieser Code korrekt?</h3>
+                            <p class="question-code">char ersterBuchstabe = "a";</p>
+                            <!-- Option 1 -->
+                            <div class="flex">
+                                <input type="radio" name="q7" id="o21">
+                                <label for="o21" class="">Ja</label>
+                            </div>
+                            <!-- Option 2 -->
+                            <div class="flex">
+                                <input type="radio" name="q7" id="o22" class="correct">
+                                <label for="o22" class="">Nein</label>
+                            </div>
+                            <p id="q7"></p>
+                        </div>
+
+                        <!-- Summary -->
+                        <div class="" id="summary-container">
+                            <p id="summary-message"></p>
+                        </div>
+
+                        <button type="submit" class="quiz-container" onclick="quizSubmition(event)">Abgeben</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://kit.fontawesome.com/bad7f7f5d4.js" crossorigin="anonymous"></script>
+    <script src="../../js/solveQuiz.js"></script>
+    <script>
+        const quizID = 'CS Quiz Level 1';
+    </script>
+</body>
+</html>

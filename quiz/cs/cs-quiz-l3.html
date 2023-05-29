@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSIZZ | C-Sharp Quiz Profi</title>
+
+    <link rel="stylesheet" href="../../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section>
+        <div class="centered">
+            <div class="container">
+                <nav class="navbar">
+                    <ul>
+                        <!-- <li><img src="img/logo.png" alt="Logo"></li> -->
+                        <li><a href="../../index.html">Auswahl</a></li>
+                        <li><a href="../../bestenliste.html">Bestenliste</a></li>
+                    </ul>
+                </nav>
+            </div>
+    
+            <div class="container">
+                <div class="content">
+                    <h1>C# Quiz</h1>
+                    <p class="addition">Level 3: Profi</p>
+                    <form class="quiz-form">
+
+
+                        <!-- Frage 1 bis 6 muss ich noch machen, 7 ist schon erstellt -->
+                        <!-- Bei js l3 muss auch noch fragen bearbeitet werden -->
+
+
+                        <!-- Frage 1 -->
+                        <div class="quiz-container">
+                            <h3 class="question">Was ist die gr&ouml;ßte Wert, die ein Integer haben kann?</h3>
+                            <p class="question-code"></p>
+                            <!-- correct answer -->
+                            <div class="q1 correct-code">
+                                <label for="s1" class="">L&ouml;sung:</label>
+                                <input type="text" id="s1" value="2^(32-1)-1 = 2.147.483.647" disabled>
+                            </div>
+                            <!-- Answer field for text -->
+                            <div class="">
+                                <label for="o1" class="hidden-answer">\s?(2147483647|2,147,483,647|2\.147\.483\.647)\s?</label>
+                                <input type="text" name="q1" id="o1">
+                            </div>
+                            <p id="q1"></p>
+                        </div>
+
+                        <!-- Frage 2 -->
+                        <div class="quiz-container">
+                            <h3 class="question">Mit welchem Index startet ein Array?</h3>
+                            <p class="question-code"></p>
+                            <!-- correct answer -->
+                            <div class="q2 correct-code">
+                                <label for="s2" class="">L&ouml;sung:</label>
+                                <input type="text" id="s2" value="0" disabled>
+                            </div>
+                            <!-- Answer field for text -->
+                            <div class="">
+                                <label for="o2" class="hidden-answer">\s?0\s?</label>
+                                <input type="text" name="q2" id="o2">
+                            </div>
+                            <p id="q2"></p>
+                        </div>
+
+                        <!-- Frage 3 -->
+                        <div class="quiz-container">
+                            <h3 class="question">Wie kann dieses Codefragment neu schreiben?</h3>
+                            <p class="question-code">
+                                if (a &gt; b) c = b; <br />
+                                else c = a;
+                            </p>
+                            <!-- Option 1 -->
+                            <div class="flex">
+                                <input type="radio" name="q3" id="o3">
+                                <label for="o3" class="">c = a&gt;b? b : a;</label>
+                            </div>
+                            <!-- Option 2 -->
+                            <div class="flex">
+                                <input type="radio" name="q3" id="o4" class="correct">
+                                <label for="o4" class="">c = a&gt;b? a : b;</label>
+                            </div>
+                            <!-- Option 3 -->
+                            <div class="flex">
+                                <input type="radio" name="q3" id="o5">
+                                <label for="o5" class="">c = a&gt;? return(b) : return(a);</label>
+                            </div>
+                            <p id="q3"></p>
+                        </div>
+
+                        <!-- Frage 4 -->
+                        <div class="quiz-container">
+                            <h3 class="question">Wie wird das Objekt meinObj der Klasse MeineKlasse erstellt?</h3>
+                            <p class="question-code"></p>
+                            <!-- Option 1 -->
+                            <div class="flex">
+                                <input type="radio" name="q4" id="o6">
+                                <label for="o6" class="">class meinObj = new MeineKlasse();</label>
+                            </div>
+                            <!-- Option 2 -->
+                            <div class="flex">
+                                <input type="radio" name="q4" id="o7">
+                                <label for="o7">new meinObj = new MeineKlasse();</label>
+                            </div>
+                            <!-- Option 3 -->
+                            <div class="flex">
+                                <input type="radio" name="q4" id="o8" class="correct">
+                                <label for="o8">MeineKlasse meinObj = new MeineKlasse();</label>
+                            </div>
+                            <p id="q4"></p>
+                        </div>
+
+                        <!-- Frage 5 -->
+                        <div class="quiz-container">
+                            <h3 class="question">Mit welchem Keyword kann man die Variable in der vererbten Klasse "kl2" mit zug&auml;nglich machen, aber nicht &ouml;ffentlich zug&auml;nglich machen?</h3>
+                            <p class="question-code">... meineZahl = 10;</p>
+                            <!-- correct answer -->
+                            <div class="q5 correct-code">
+                                <label for="s9" class="">L&ouml;sung:</label>
+                                <input type="text" id="s9" value="protected" disabled>
+                            </div>
+                            <!-- Answer field for text -->
+                            <div class="">
+                                <label for="o9" class="hidden-answer">\s?protected\s?</label>
+                                <input type="text" name="q5" id="o9">
+                            </div>
+                            <p id="q5"></p>
+                        </div>
+
+                        <!-- Frage 6 -->
+                        <div class="quiz-container">
+                            <h3 class="question">Welcher Code stimmt nicht?</h3>
+                            <p class="question-code"></p>
+                            <!-- Option 1 -->
+                            <div class="flex">
+                                <input type="radio" name="q6" id="o10">
+                                <label for="o10" class="">while (1) { }</label>
+                            </div>
+                            <!-- Option 2 -->
+                            <div class="flex">
+                                <input type="radio" name="q6" id="o11" class="correct">
+                                <label for="o11" class="">for (int i = 0.1; i &lt; 2; i++) { }</label>
+                            </div>
+                            <!-- Option 3 -->
+                            <div class="flex">
+                                <input type="radio" name="q6" id="o12">
+                                <label for="o12" class="">if (i == 1 || !(i == 3 && j == 4)) { }</label>
+                            </div>
+                            <p id="q6"></p>
+                        </div>
+
+                        <!-- Frage 7 -->
+                        <div class="quiz-container">
+                            <h3 class="question">Welchen dieser Zuweisungsoperatoren gibt es nicht?</h3>
+                            <p class="question-code"></p>
+                            <!-- Option 1 -->
+                            <div class="flex">
+                                <input type="radio" name="q7" id="o13">
+                                <label for="o13" class="">&lt;&lt;=</label>
+                            </div>
+                            <!-- Option 2 -->
+                            <div class="flex">
+                                <input type="radio" name="q7" id="o14">
+                                <label for="o14" class="">^=</label>
+                            </div>
+                            <!-- Option 3 -->
+                            <div class="flex">
+                                <input type="radio" name="q7" id="o15" class="correct">
+                                <label for="o15" class="">//=</label>
+                            </div>
+                            <!-- Option 4 -->
+                            <div class="flex">
+                                <input type="radio" name="q7" id="o16">
+                                <label for="o16" class="">=</label>
+                            </div>
+                            <!-- Option 5 -->
+                            <div class="flex">
+                                <input type="radio" name="q7" id="o17">
+                                <label for="o17" class="">&=</label>
+                            </div>
+                            <p id="q7"></p>
+                        </div>
+
+                        <!-- Summary -->
+                        <div class="" id="summary-container">
+                            <p id="summary-message"></p>
+                        </div>
+
+                        <button type="submit" class="quiz-container" onclick="quizSubmition(event)">Abgeben</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://kit.fontawesome.com/bad7f7f5d4.js" crossorigin="anonymous"></script>
+    <script src="../../js/solveQuiz.js"></script>
+    <script>
+        const quizID = 'CS Quiz Level 3';
+    </script>
+</body>
+</html>

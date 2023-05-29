@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSIZZ | JavaScript Quiz Amateur</title>
+
+    <link rel="stylesheet" href="../../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section>
+        <div class="centered">
+            <div class="container">
+                <nav class="navbar">
+                    <ul>
+                        <!-- <li><img src="img/logo.png" alt="Logo"></li> -->
+                        <li><a href="../../index.html">Auswahl</a></li>
+                        <li><a href="../../bestenliste.html">Bestenliste</a></li>
+                    </ul>
+                </nav>
+            </div>
+    
+            <div class="container">
+                <div class="content">
+                    <h1>JavaScript Quiz</h1>
+                    <p class="addition">Level 1: Amateur</p>
+                    <form class="quiz-form">
+                        <!-- Frage 1 -->
+                        <div class="quiz-container">
+                            <h3 class="question">Was wird ausgegeben?</h3>
+                            <p class="question-code">alert(2+3);</p>
+                            <!-- Option 1 -->
+                            <div class="flex">
+                                <input type="radio" name="q1" id="o1" class="correct">
+                                <label for="o1" class="">Eine Meldung mit der Zahl 5</label>
+                            </div>
+                            <!-- Option 2 -->
+                            <div class="flex">
+                                <input type="radio" name="q1" id="o2">
+                                <label for="o2" class="">Eine Meldung in der Konsole mit der Zahl 5</label>
+                            </div>
+                            <!-- Option 3 -->
+                            <div class="flex">
+                                <input type="radio" name="q1" id="o3">
+                                <label for="o3" class="">Eine Meldung mit "2+3"</label>
+                            </div>
+                            <!-- Option 4 -->
+                            <div class="flex">
+                                <input type="radio" name="q1" id="o4">
+                                <label for="o4" class="">Eine Meldung in der Konsole mit "2+3"</label>
+                            </div>
+                            <p id="q1"></p>
+                        </div>
+
+                        <!-- Frage 2 -->
+                        <div class="quiz-container">
+                            <h3 class="question">Wann ist dieses Statement wahr?</h3>
+                            <p class="question-code">if (nr1 &lt; nr2) {...}</p>
+                            <!-- Option 1 -->
+                            <div class="flex">
+                                <input type="radio" name="q2" id="o5">
+                                <label for="o5" class="">Wenn nr1 klein ist</label>
+                            </div>
+                            <!-- Option 2 -->
+                            <div class="flex">
+                                <input type="radio" name="q2" id="o6">
+                                <label for="o6" class="">Wenn nr2 klein ist</label>
+                            </div>
+                            <!-- Option 3 -->
+                            <div class="flex">
+                                <input type="radio" name="q2" id="o7" class="correct">
+                                <label for="o7">Wenn nr1 kleiner als nr2 ist</label>
+                            </div>
+                            <p id="q2"></p>
+                        </div>
+
+                        <!-- Frage 3 -->
+                        <div class="quiz-container">
+                            <h3 class="question">Wie wird diese Blockvariable richtig deklariert?</h3>
+                            <p class="question-code">... automarke = "Volvo";</p>
+                            <!-- Option 1 -->
+                            <div class="flex">
+                                <input type="radio" name="q3" id="o8">
+                                <label for="o8" class="">string automarke = "Volvo";</label>
+                            </div>
+                            <!-- Option 2 -->
+                            <div class="flex">
+                                <input type="radio" name="q3" id="o9" class="correct">
+                                <label for="o9" class="">let automarke = "Volvo";</label>
+                            </div>
+                            <!-- Option 3 -->
+                            <div class="flex">
+                                <input type="radio" name="q3" id="o10">
+                                <label for="o10">int automarke = "Volvo";</label>
+                            </div>
+                            <!-- Option 4 -->
+                            <div class="flex">
+                                <input type="radio" name="q3" id="o11">
+                                <label for="o11">gar nicht</label>
+                            </div>
+                            <p id="q3"></p>
+                        </div>
+
+                        <!-- Frage 4 -->
+                        <div class="quiz-container">
+                            <h3 class="question">Wie ist diese Variable ver&auml;nderbar?</h3>
+                            <p class="question-code">const PI = 3.14;</p>
+                            <!-- Option 1 -->
+                            <div class="flex">
+                                <input type="radio" name="q4" id="o12">
+                                <label for="o12" class="">const PI = 3.14159;</label>
+                            </div>
+                            <!-- Option 2 -->
+                            <div class="flex">
+                                <input type="radio" name="q4" id="o13">
+                                <label for="o13" class="">PI = 3.14159</label>
+                            </div>
+                            <!-- Option 3 -->
+                            <div class="flex">
+                                <input type="radio" name="q4" id="o14" class="correct">
+                                <label for="o14">gar nicht</label>
+                            </div>
+                            <p id="q4"></p>
+                        </div>
+
+                        <!-- Frage 5 -->
+                        <div class="quiz-container">
+                            <h3 class="question">Welchen Datentyp darf der Parameter haben?</h3>
+                            <p class="question-code">function hochZwei(param) {...}</p>
+                            <!-- Option 1 -->
+                            <div class="flex">
+                                <input type="radio" name="q5" id="o15">
+                                <label for="o15" class="">Number</label>
+                            </div>
+                            <!-- Option 2 -->
+                            <div class="flex">
+                                <input type="radio" name="q5" id="o16">
+                                <label for="o16" class="">Float (Fließkommazahl)</label>
+                            </div>
+                            <!-- Option 3 -->
+                            <div class="flex">
+                                <input type="radio" name="q5" id="o17" class="correct">
+                                <label for="o17">Alle</label>
+                            </div>
+                            <p id="q5"></p>
+                        </div>
+
+                        <!-- Frage 6 -->
+                        <div class="quiz-container">
+                            <h3 class="question">Wie wird einem Array der String "BMW" hinzugef&uuml;gt?</h3>
+                            <p class="question-code"></p>
+                            <!-- Option 1 -->
+                            <div class="flex">
+                                <input type="radio" name="q6" id="o18">
+                                <label for="o18" class="">Array.push(BMW)</label>
+                            </div>
+                            <!-- Option 2 -->
+                            <div class="flex">
+                                <input type="radio" name="q6" id="o19">
+                                <label for="o19" class="">Array = "BMW"</label>
+                            </div>
+                            <!-- Option 3 -->
+                            <div class="flex">
+                                <input type="radio" name="q6" id="o20" class="correct">
+                                <label for="o20">Array.push(`BMW`)</label>
+                            </div>
+                            <p id="q6"></p>
+                        </div>
+
+                        <!-- Summary -->
+                        <div class="" id="summary-container">
+                            <p id="summary-message"></p>
+                        </div>
+
+                        <button type="submit" class="quiz-container" onclick="quizSubmition(event)">Abgeben</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://kit.fontawesome.com/bad7f7f5d4.js" crossorigin="anonymous"></script>
+    <script src="../../js/solveQuiz.js"></script>
+    <script>
+        const quizID = 'JS Quiz Level 1';
+    </script>
+</body>
+</html>

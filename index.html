@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSIZZ Home</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section>
+        <div class="centered">
+            <div class="container">
+                <nav class="navbar">
+                    <ul>
+                        <!-- <li><img src="img/logo.png" alt="Logo"></li> -->
+                        <li><a href="index.html">Auswahl</a></li>
+                        <li><a href="bestenliste.html">Bestenliste</a></li>
+                    </ul>
+                </nav>
+            </div>
+    
+            <div class="container">
+                <div class="content">
+                    <h1>Quizze die zur Auswahl stehen</h1>
+                    <p class="addition">Schwierigkeit nach hovern ausw&auml;hlbar</p>
+                    <div class="quiz-selection">
+                        <!-- JS QUIZCARD -->
+                        <div class="quiz-card" onmouseover="showList('JS')" onmouseout="hideList();">
+                            <img src="img/js-icon.png" alt="JavaScript Logo">
+                            <div>
+                                <h2>JS Quiz</h2>
+                            </div>
+                            <ul class="difflist js">
+                                <!-- Level 1: Amateur, Level 2: Intermediate, Level 3: Professional -->
+                                <li><a href="quiz/js/js-quiz-l1.html"><i class="fa-solid fa-1"></i></a></li>
+                                <li><a href="quiz/js/js-quiz-l2.html"><i class="fa-solid fa-2"></i></a></li>
+                                <li><a href="quiz/js/js-quiz-l3.html"><i class="fa-solid fa-3"></i></a></li>
+                            </ul>
+                        </div>
+                        <!-- HTML QUIZCARD -->
+                        <div class="quiz-card"  onmouseover="showList('HTML')" onmouseout="hideList();">
+                            <img src="img/html-icon.png" alt="HTML5 Logo">
+                            <div>
+                                <h2>HTML5 Quiz</h2>
+                            </div>
+                            <ul class="difflist html">
+                                <li><a href="quiz/html5/html-quiz-l1.html"><i class="fa-solid fa-1"></i></a></li>
+                                <li><a href="quiz/html5/html-quiz-l2.html"><i class="fa-solid fa-2"></i></a></li>
+                                <li><a href="quiz/html5/html-quiz-l3.html"><i class="fa-solid fa-3"></i></a></li>
+                            </ul>
+                        </div>
+                        <!-- CSS QUIZCARD -->
+                        <div class="quiz-card"  onmouseover="showList('CSS')" onmouseout="hideList();">
+                            <img src="img/css-icon.png" alt="CSS3 Logo">
+                            <div>
+                                <h2>CSS3 Quiz</h2>
+                            </div>
+                            <ul class="difflist css">
+                                <li><a href="quiz/css/css-quiz-l1.html"><i class="fa-solid fa-1"></i></a></li>
+                                <li><a href="quiz/css/css-quiz-l2.html"><i class="fa-solid fa-2"></i></a></li>
+                                <li><a href="quiz/css/css-quiz-l3.html"><i class="fa-solid fa-3"></i></a></li>
+                            </ul>
+                        </div>
+                        <!-- C# QUIZCARD -->
+                        <div class="quiz-card"  onmouseover="showList('CS')" onmouseout="hideList();">
+                            <img src="img/cs-icon.png" alt="CSharp Logo">
+                            <div>
+                                <h2>C# Quiz</h2>
+                            </div>
+                            <ul class="difflist cs">
+                                <li><a href="quiz/cs/cs-quiz-l1.html"><i class="fa-solid fa-1"></i></a></li>
+                                <li><a href="quiz/cs/cs-quiz-l2.html"><i class="fa-solid fa-2"></i></a></li>
+                                <li><a href="quiz/cs/cs-quiz-l3.html"><i class="fa-solid fa-3"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://kit.fontawesome.com/bad7f7f5d4.js" crossorigin="anonymous"></script>
+    <script src="js/quizVisibility.js"></script>
+</body>
+</html>

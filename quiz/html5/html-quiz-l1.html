@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSIZZ | HTML5 Quiz Amateur</title>
+
+    <link rel="stylesheet" href="../../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section>
+        <div class="centered">
+            <div class="container">
+                <nav class="navbar">
+                    <ul>
+                        <!-- <li><img src="img/logo.png" alt="Logo"></li> -->
+                        <li><a href="../../index.html">Auswahl</a></li>
+                        <li><a href="../../bestenliste.html">Bestenliste</a></li>
+                    </ul>
+                </nav>
+            </div>
+    
+            <div class="container">
+                <div class="content">
+                    <h1>HTML5 Quiz</h1>
+                    <p class="addition">Level 1: Amateur</p>
+                    <form class="quiz-form">
+                        <!-- Frage 1 -->
+                        <div class="quiz-container">
+                            <h3 class="question">Was heißt HTML?</h3>
+                            <p class="question-code"></p>
+                            <!-- Option 1 -->
+                            <div class="flex">
+                                <input type="radio" name="q1" id="o1">
+                                <label for="o1" class="">Hyper Text Marked Loop</label>
+                            </div>
+                            <!-- Option 2 -->
+                            <div class="flex">
+                                <input type="radio" name="q1" id="o2">
+                                <label for="o2" class="">Hyperlinked Text and Markup Language</label>
+                            </div>
+                            <!-- Option 3 -->
+                            <div class="flex">
+                                <input type="radio" name="q1" id="o3" class="correct">
+                                <label for="o3" class="">Hyper Text Markup Language</label>
+                            </div>
+                            <p id="q1"></p>
+                        </div>
+
+                        <!-- Frage 2 -->
+                        <div class="quiz-container">
+                            <h3 class="question">Was ist das richtige Element für einen normalen Text?</h3>
+                            <p class="question-code"></p>
+                            <!-- Option 1 -->
+                            <div class="flex">
+                                <input type="radio" name="q2" id="o4" class="correct">
+                                <label for="o4" class="">&lt;p&gt;</label>
+                            </div>
+                            <!-- Option 2 -->
+                            <div class="flex">
+                                <input type="radio" name="q2" id="o5">
+                                <label for="o5" class="">&lt;h1&gt;</label>
+                            </div>
+                            <!-- Option 3 -->
+                            <div class="flex">
+                                <input type="radio" name="q2" id="o6">
+                                <label for="o6" class="">&lt;h3&gt;</label>
+                            </div>
+                            <!-- Option 4 -->
+                            <div class="flex">
+                                <input type="radio" name="q2" id="o7">
+                                <label for="o7">&lt;h6&gt;</label>
+                            </div>
+                            <p id="q2"></p>
+                        </div>
+
+                        <!-- Frage 3 -->
+                        <div class="quiz-container">
+                            <h3 class="question">Wie lautet der Endtag zu diesem Code?</h3>
+                            <p class="question-code">&lt;span&gt;</p>
+                            <!-- Option 1 -->
+                            <div class="flex">
+                                <input type="radio" name="q3" id="o8">
+                                <label for="o8" class="">&lt;span&gt;</label>
+                            </div>
+                            <!-- Option 2 -->
+                            <div class="flex">
+                                <input type="radio" name="q3" id="o9" class="correct">
+                                <label for="o9" class="">&lt;/span&gt;</label>
+                            </div>
+                            <!-- Option 3 -->
+                            <div class="flex">
+                                <input type="radio" name="q3" id="o10">
+                                <label for="o10">&lt;span/&gt;</label>
+                            </div>
+                            <!-- Option 4 -->
+                            <div class="flex">
+                                <input type="radio" name="q3" id="o11">
+                                <label for="o11">&lt;ENDspan&gt;</label>
+                            </div>
+                            <p id="q3"></p>
+                        </div>
+
+                        <!-- Frage 4 -->
+                        <div class="quiz-container">
+                            <h3 class="question">Wie f&uuml;gt man die Klasse "hallo" diesem HTML Element zu?</h3>
+                            <p class="question-code">&lt;h1&gt;</p>
+                            <!-- Option 1 -->
+                            <div class="flex">
+                                <input type="radio" name="q4" id="o12">
+                                <label for="o12" class="">&lt;h1 class=hallo&gt;</label>
+                            </div>
+                            <!-- Option 2 -->
+                            <div class="flex">
+                                <input type="radio" name="q4" id="o13" class="correct">
+                                <label for="o13" class="">&lt;h1 class="hallo"&gt;</label>
+                            </div>
+                            <!-- Option 3 -->
+                            <div class="flex">
+                                <input type="radio" name="q4" id="o14">
+                                <label for="o14">&lt;h1 klasse="hallo"&gt;</label>
+                            </div>
+                            <p id="q4"></p>
+                        </div>
+
+                        <!-- Frage 5 -->
+                        <div class="quiz-container">
+                            <h3 class="question">Wie sieht ein Kommentar in HTML aus?</h3>
+                            <p class="question-code"></p>
+                            <!-- Option 1 -->
+                            <div class="flex">
+                                <input type="radio" name="q5" id="o15">
+                                <label for="o15" class="">// das ist ein Kommentar</label>
+                            </div>
+                            <!-- Option 2 -->
+                            <div class="flex">
+                                <input type="radio" name="q5" id="o16">
+                                <label for="o16" class="">&lt;/ das ist ein Kommentar /&gt;</label>
+                            </div>
+                            <!-- Option 3 -->
+                            <div class="flex">
+                                <input type="radio" name="q5" id="o17" class="correct">
+                                <label for="o17">&lt;!-- das ist ein Kommentar --&gt;</label>
+                            </div>
+                            <p id="q5"></p>
+                        </div>
+
+                        <!-- Frage 6 -->
+                        <div class="quiz-container">
+                            <h3 class="question">Ist dieses HTML Element korrekt?</h3>
+                            <p class="question-code">&lt;span ib="nr1"&gt;Hier ist etwas Text&lt;span/&gt;</p>
+                            <!-- Option 1 -->
+                            <div class="flex">
+                                <input type="radio" name="q6" id="o18">
+                                <label for="o18" class="">Ja, das ist korrekt</label>
+                            </div>
+                            <!-- Option 2 -->
+                            <div class="flex">
+                                <input type="radio" name="q6" id="o19" class="correct">
+                                <label for="o19" class="">Nein, das ist nicht korrekt</label>
+                            </div>
+                            <p id="q6"></p>
+                        </div>
+
+                        <!-- Summary -->
+                        <div class="" id="summary-container">
+                            <p id="summary-message"></p>
+                        </div>
+
+                        <button type="submit" class="quiz-container" onclick="quizSubmition(event)">Abgeben</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://kit.fontawesome.com/bad7f7f5d4.js" crossorigin="anonymous"></script>
+    <script src="../../js/solveQuiz.js"></script>
+    <script>
+        const quizID = 'HTML5 Quiz Level 1';
+    </script>
+</body>
+</html>

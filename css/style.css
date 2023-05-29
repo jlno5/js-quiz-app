@@ -1,0 +1,314 @@
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url(../img/background.jpg) no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', monospace;
+    color: #fff;
+}
+
+section {
+    margin: 10vh auto;
+}
+
+.container + .container {
+    margin-top: 20px;
+}
+
+.container {
+    margin: auto;
+    text-align: center;
+    max-width: 70vw;
+
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.6px);
+    -webkit-backdrop-filter: blur(5.6px);
+}
+
+.content {
+    min-height: 300px;
+    overflow-x: hidden;
+}
+
+/**** Navigation ****/
+nav {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li + li {    /** first element does not have any margins bc of + li **/
+    margin-left: 10px
+}
+
+nav li img {
+    width: 40px;
+}
+
+nav li a,
+nav li {
+    color: #fff;
+    padding: 8px;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: capitalize;
+    text-decoration: none;
+    position: relative;
+}
+
+/** this is for the underlining effect **/
+nav a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 2px;
+    left: 0;
+    background-color: #fff;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-in-out;
+    -webkit-transition: transform 0.3s ease-in-out;
+    -moz-transition: transform 0.3s ease-in-out;
+    -ms-transition: transform 0.3s ease-in-out;
+    -o-transition: transform 0.3s ease-in-out;
+}
+
+nav a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+
+/**** Quiz Selection ****/
+.quiz-selection {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    justify-content: center;
+    align-items: center;
+}
+
+.quiz-card {
+    background: rgba(92, 90, 90, 0.21);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.6px);
+    -webkit-backdrop-filter: blur(5.6px);
+    margin: 20px;
+    padding: 20px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (max-width: 480px) {
+    .quiz-selection {
+        grid-template-columns: 100%;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .quiz-selection {
+        grid-template-columns: 50% 50%;
+    }
+}
+
+.quiz-card img {
+    width: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.addition {
+    color: #bbbcbe;
+    overflow-x: hidden;
+}
+
+.difflist {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 8px 0 0 0;
+    margin-bottom: 0;
+    margin-top: 16px;
+}
+
+.difflist i {
+    color:#ccc;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+.difflist li:hover .fa-1 {
+    transform:translate3d(0,-10px,20px);
+    color:#00acee;
+    -webkit-transform:translate3d(0,-10px,20px);
+    -moz-transform:translate3d(0,-10px,20px);
+    -ms-transform:translate3d(0,-10px,20px);
+    -o-transform:translate3d(0,-10px,20px);
+}
+.difflist li:hover .fa-2 {
+    transform:translate3d(0,-10px,20px);
+    color:gray;
+    -webkit-transform:translate3d(0,-10px,20px);
+    -moz-transform:translate3d(0,-10px,20px);
+    -ms-transform:translate3d(0,-10px,20px);
+    -o-transform:translate3d(0,-10px,20px);
+}
+.difflist li:hover .fa-3 { 
+    transform:translate3d(0,-10px,20px);
+    color:#077099;
+}
+
+/**** Formular of the Quiz ****/
+.quiz-container {
+    background: rgba(92, 90, 90, 0.21);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.6px);
+    -webkit-backdrop-filter: blur(5.6px);
+    margin: 20px;
+    padding: 20px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+    overflow-x: hidden; /** this is because the text would have full width by highlighting **/
+}
+
+.question {
+    margin-bottom: 5px;
+}
+
+.question-code {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 18px;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+.question-addition {
+    font-size: 18px;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+.flex {
+    display: absolute;
+    text-align: left;
+}
+
+.flex label:not(.hidden-answer) {
+    margin-left: 10px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    display: inline-block;
+}
+
+.hidden-answer {
+    display: none;
+}
+
+.correct-code {
+    display: none;
+}
+
+input[type="radio"] {
+    margin-top: -1px;
+    vertical-align: middle;
+}
+
+input[type='text'] {
+    background: rgba(177, 173, 173, 0.2);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    min-width: 30vw;
+}
+
+input[id^="s"] {    /** only selects the inputs with an s in the ID (only the solutions for textinput) **/
+    margin-bottom: 10px;
+}
+
+button[type="submit"] {
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+}
+
+button[type="submit"]:hover {
+    background: rgba(131, 131, 131, 0.54);
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.9px);
+    -webkit-backdrop-filter: blur(4.9px);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.quiz-container label {
+    cursor: pointer;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.pd-r-15 {
+    padding-right: 15px;
+}
+
+
+/**** Summary Container ****/
+#summary-container,
+#summary-message {
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+
+/**** Leaderboard ****/
+table {
+    width: 100%;
+}
+
+tr {
+    display: grid;
+    grid-template-columns: 40% 40% 20%;
+    width: 100%;
+}
+
+th {
+    text-align: left;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+td {
+    text-align: left;
+    margin: 8px 0;
+}

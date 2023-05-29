@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSIZZ | HTML Quiz Profi</title>
+
+    <link rel="stylesheet" href="../../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section>
+        <div class="centered">
+            <div class="container">
+                <nav class="navbar">
+                    <ul>
+                        <!-- <li><img src="img/logo.png" alt="Logo"></li> -->
+                        <li><a href="../../index.html">Auswahl</a></li>
+                        <li><a href="../../bestenliste.html">Bestenliste</a></li>
+                    </ul>
+                </nav>
+            </div>
+    
+            <div class="container">
+                <div class="content">
+                    <h1>HTML5 Quiz</h1>
+                    <p class="addition">Level 3: Profi</p>
+                    <form class="quiz-form">
+                        <!-- Frage 1 -->
+                        <div class="quiz-container">
+                            <h3 class="question">Wie bekommt man es hin, dass sich ein Hyperlink in einem neuen Tab &ouml;ffnet?</h3>
+                            <p class="question-code">&lt;a href="https://r.mtdv.me/jsizz" ...&gt;Klicke&lt;/a&gt;</p>
+                            <!-- Option 1 -->
+                            <div class="flex">
+                                <input type="radio" name="q1" id="o1" class="correct">
+                                <label for="o1" class="">target="_blank"</label>
+                            </div>
+                            <!-- Option 2 -->
+                            <div class="flex">
+                                <input type="radio" name="q1" id="o2">
+                                <label for="o2" class="">target="newtab"</label>
+                            </div>
+                            <!-- Option 3 -->
+                            <div class="flex">
+                                <input type="radio" name="q1" id="o3">
+                                <label for="o3" class="">onclick=newtab</label>
+                            </div>
+                            <p id="q1"></p>
+                        </div>
+
+                        <!-- Frage 2 -->
+                        <div class="quiz-container">
+                            <h3 class="question">Wof&uuml;r steht das "/png/" im Code unten?</h3>
+                            <p class="question-code">&lt;img src="/png/logo.png" /&gt;</p>
+                            <!-- Option 1 -->
+                            <div class="flex">
+                                <input type="radio" name="q2" id="o4">
+                                <label for="o4" class="">F&uuml;r einen relativen Pfad</label>
+                            </div>
+                            <!-- Option 2 -->
+                            <div class="flex">
+                                <input type="radio" name="q2" id="o5" class="correct">
+                                <label for="o5" class="">F&uuml;r einen absoluten Pfad</label>
+                            </div>
+                            <!-- Option 3 -->
+                            <div class="flex">
+                                <input type="radio" name="q2" id="o6">
+                                <label for="o6" class="">Es bedeutet, dass es sich um ein Bild des Types PNG handelt</label>
+                            </div>
+                            <p id="q2"></p>
+                        </div>
+
+                        <!-- Frage 3 -->
+                        <div class="quiz-container">
+                            <h3 class="question">Mit welchem HTML Element kann man Text Fett machen? F&uuml;lle die L&uuml;cke aus!</h3>
+                            <p class="question-code">&lt;...&gt;</p>
+                            <!-- correct answer -->
+                            <div class="q3 correct-code">
+                                <label for="s7" class="">L&ouml;sung:</label>
+                                <input type="text" id="s7" value="b" disabled>
+                            </div>
+                            <!-- Answer field for text -->
+                            <div class="">
+                                <label for="o7" class="hidden-answer">b</label>
+                                <input type="text" name="q3" id="o7">
+                            </div>
+                            <p id="q3"></p>
+                        </div>
+
+                        <!-- Frage 4 -->
+                        <div class="quiz-container">
+                            <h3 class="question">Welcher dieser Links ist ein EMail Link?</h3>
+                            <p class="question-code"></p>
+                            <!-- Option 1 -->
+                            <div class="flex">
+                                <input type="radio" name="q4" id="o8" class="correct">
+                                <label for="o8" class="">&lt;a href="mailto:xxx@yyy.zz&gt;Mail&lt;/a&gt;</label>
+                            </div>
+                            <!-- Option 2 -->
+                            <div class="flex">
+                                <input type="radio" name="q4" id="o9">
+                                <label for="o9" class="">&&lt;a href="xxx@yyy.zz&gt;Mail&lt;/a&gt;</label>
+                            </div>
+                            <!-- Option 3 -->
+                            <div class="flex">
+                                <input type="radio" name="q4" id="o10">
+                                <label for="o10">&lt;mail href="xxx@yyy.zz&gt;Mail&lt;/mail&gt;</label>
+                            </div>
+                            <p id="q4"></p>
+                        </div>
+
+                        <!-- Frage 5 -->
+                        <div class="quiz-container">
+                            <h3 class="question">Das Attribut "for" eines Labels referenziert worauf?</h3>
+                            <p class="question-code"></p>
+                            <!-- Option 1 -->
+                            <div class="flex">
+                                <input type="radio" name="q5" id="o11" class="correct">
+                                <label for="o11" class="">auf das Attribut "id" eines Inputs</label>
+                            </div>
+                            <!-- Option 2 -->
+                            <div class="flex">
+                                <input type="radio" name="q5" id="o12">
+                                <label for="o12" class="">auf das Attribut "name" eines Inputs</label>
+                            </div>
+                            <!-- Option 3 -->
+                            <div class="flex">
+                                <input type="radio" name="q5" id="o13">
+                                <label for="o13">auf gar nichts</label>
+                            </div>
+                            <p id="q5"></p>
+                        </div>
+
+                        <!-- Frage 6 -->
+                        <div class="quiz-container">
+                            <h3 class="question">Wie kann man bei einem radio Input es machen, dass nur einer der Inputs ausw&auml;hlbar ist?</h3>
+                            <p class="question-code"></p>
+                            <!-- Option 1 -->
+                            <div class="flex">
+                                <input type="radio" name="q6" id="o12">
+                                <label for="o12" class="">Das Attribut "id" muss bei allen Inputs einer Antwortm&ouml;glichkeit gleich sein</label>
+                            </div>
+                            <!-- Option 2 -->
+                            <div class="flex">
+                                <input type="radio" name="q6" id="o13" class="correct">
+                                <label for="o13" class="">Das Attribut "name" muss bei allen Inputs einer Antwortm&ouml;glichkeit gleich sein</label>
+                            </div>
+                            <!-- Option 3 -->
+                            <div class="flex">
+                                <input type="radio" name="q6" id="o13">
+                                <label for="o13" class="">Das Attribut "group" muss bei allen Inputs einer Antwortm&ouml;glichkeit gleich sein</label>
+                            </div>
+                            <p id="q6"></p>
+                        </div>
+
+                        <!-- Frage 7 -->
+                        <div class="quiz-container">
+                            <h3 class="question">Welche dieser Farben ist eine valide Farbe?</h3>
+                            <p class="question-code"></p>
+                            <!-- Option 1 -->
+                            <div class="flex">
+                                <input type="radio" name="q7" id="o14">
+                                <label for="o14" class="">#0000000;</label>
+                            </div>
+                            <!-- Option 2 -->
+                            <div class="flex">
+                                <input type="radio" name="q7" id="o15" class="correct">
+                                <label for="o15" class="">#0c52ag;</label>
+                            </div>
+                            <!-- Option 3 -->
+                            <div class="flex">
+                                <input type="radio" name="q7" id="o16">
+                                <label for="o16" class="">#c792fab;</label>
+                            </div>
+                            <p id="q7"></p>
+                        </div>
+
+                        <!-- Summary -->
+                        <div class="" id="summary-container">
+                            <p id="summary-message"></p>
+                        </div>
+
+                        <button type="submit" class="quiz-container" onclick="quizSubmition(event)">Abgeben</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://kit.fontawesome.com/bad7f7f5d4.js" crossorigin="anonymous"></script>
+    <script src="../../js/solveQuiz.js"></script>
+    <script>
+        const quizID = 'HTML5 Quiz Level 3';
+    </script>
+</body>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSIZZ | CSS Quiz Profi</title>
+
+    <link rel="stylesheet" href="../../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section>
+        <div class="centered">
+            <div class="container">
+                <nav class="navbar">
+                    <ul>
+                        <!-- <li><img src="img/logo.png" alt="Logo"></li> -->
+                        <li><a href="../../index.html">Auswahl</a></li>
+                        <li><a href="../../bestenliste.html">Bestenliste</a></li>
+                    </ul>
+                </nav>
+            </div>
+    
+            <div class="container">
+                <div class="content">
+                    <h1>CSS Quiz</h1>
+                    <p class="addition">Level 3: Profi</p>
+                    <form class="quiz-form">
+                        <!-- Frage 1 -->
+                        <div class="quiz-container">
+                            <h3 class="question">Mit welchem Selector werden alle Inputs, welche eine ID haben, welche mit "s" beginnt selektiert?</h3>
+                            <p class="question-code">... { }</p>
+                            <!-- correct answer -->
+                            <div class="q1 correct-code">
+                                <label for="s1" class="">L&ouml;sung:</label>
+                                <input type="text" id="s1" value="input[id^='s']" disabled>
+                            </div>
+                            <!-- Answer field for text -->
+                            <div class="">
+                                <label for="o1" class="hidden-answer">input\s?\[\sid\^\s?=\s?("s"|'s')\s\]\s?</label>
+                                <input type="text" name="q1" id="o1">
+                            </div>
+                            <p id="q1"></p>
+                        </div>
+
+                        <!-- Frage 2 -->
+                        <div class="quiz-container">
+                            <h3 class="question">Wie k&ouml;nnen alle Labels ausgew&auml;hlt werden, aber nicht die, die die Klasse "ha" haben?</h3>
+                            <p class="question-code"></p>
+                            <!-- Option 1 -->
+                            <div class="flex">
+                                <input type="radio" name="q2" id="o2">
+                                <label for="o2" class="">label[not_class="ha"]</label>
+                            </div>
+                            <!-- Option 2 -->
+                            <div class="flex">
+                                <input type="radio" name="q2" id="o3">
+                                <label for="o3" class="">label-.ha</label>
+                            </div>
+                            <!-- Option 3 -->
+                            <div class="flex">
+                                <input type="radio" name="q2" id="o4" class="correct">
+                                <label for="o4">label.not(.h)</label>
+                            </div>
+                            <p id="q2"></p>
+                        </div>
+
+                        <!-- Frage 3 -->
+                        <div class="quiz-container">
+                            <h3 class="question">Was macht die "padding"-Eigenschaft?</h3>
+                            <p class="question-code"></p>
+                            <!-- Option 1 -->
+                            <div class="flex">
+                                <input type="radio" name="q3" id="o5">
+                                <label for="o5" class="">Sie bestimmt die Schriftart eines Elements.</label>
+                            </div>
+                            <!-- Option 2 -->
+                            <div class="flex">
+                                <input type="radio" name="q3" id="o6" class="correct">
+                                <label for="o6" class="">Sie bestimmt den Abstand zwischen dem Inhalt des Elements und dem Elementrand.</label>
+                            </div>
+                            <!-- Option 3 -->
+                            <div class="flex">
+                                <input type="radio" name="q3" id="o7">
+                                <label for="o7">Sie bestimmt den Abstand zwischen dem Element und umliegenden Elementen.</label>
+                            </div>
+                            <!-- Option 4 -->
+                            <div class="flex">
+                                <input type="radio" name="q3" id="o8">
+                                <label for="o8">Sie bestimmt die Schriftart des Elementes.</label>
+                            </div>
+                            <p id="q3"></p>
+                        </div>
+
+                        <!-- Frage 4 -->
+                        <div class="quiz-container">
+                            <h3 class="question">Was er&ouml;glicht diese Funktion?</h3>
+                            <p class="question-code">calc()</p>
+                            <!-- Option 1 -->
+                            <div class="flex">
+                                <input type="radio" name="q4" id="o9" class="correct">
+                                <label for="o9" class="">Mathematische Berechnungen f&uuml;r dynamische Eigenschaften.</label>
+                            </div>
+                            <!-- Option 2 -->
+                            <div class="flex">
+                                <input type="radio" name="q4" id="o10">
+                                <label for="o10" class="">Sie konvertiert Farben in andere Farbformate.</label>
+                            </div>
+                            <!-- Option 3 -->
+                            <div class="flex">
+                                <input type="radio" name="q4" id="o11">
+                                <label for="o11">Sie erm&ouml;glicht die Darstellung von mathematischen Funktionen auf Webseiten.</label>
+                            </div>
+                            <p id="q4"></p>
+                        </div>
+
+                        <!-- Frage 5 -->
+                        <div class="quiz-container">
+                            <h3 class="question">Wie kann man alle Inputs mit dem Typ "radio" selektieren?</h3>
+                            <p class="question-code">... { }</p>
+                            <!-- correct answer -->
+                            <div class="q5 correct-code">
+                                <label for="s12" class="">L&ouml;sung:</label>
+                                <input type="text" id="s12" value="input[type='radio']" disabled>
+                            </div>
+                            <!-- Answer field for text -->
+                            <div class="">
+                                <label for="o12" class="hidden-answer">input\s?\[\stype\s?=\s?("radio"|'radio')\s\]\s?</label>
+                                <input type="text" name="q5" id="o12">
+                            </div>
+                            <p id="q5"></p>
+                        </div>
+
+                        <!-- Frage 6 -->
+                        <div class="quiz-container">
+                            <h3 class="question">Was macht das "transform" Attribut?</h3>
+                            <p class="question-addition">Es &auml;ndert ...</p>
+                            <!-- Option 1 -->
+                            <div class="flex">
+                                <input type="radio" name="q6" id="o13">
+                                <label for="o13" class="">... die Form, Position, Hintergrundfarbe.</label>
+                            </div>
+                            <!-- Option 2 -->
+                            <div class="flex">
+                                <input type="radio" name="q6" id="o14" class="correct">
+                                <label for="o14" class="">... die Gr&ouml;ße, Form, Position.</label>
+                            </div>
+                            <!-- Option 3 -->
+                            <div class="flex">
+                                <input type="radio" name="q6" id="o15">
+                                <label for="o15">... gar nichts, sondern entfernt das Element.</label>
+                            </div>
+                            <p id="q6"></p>
+                        </div>
+
+                        <!-- Summary -->
+                        <div class="" id="summary-container">
+                            <p id="summary-message"></p>
+                        </div>
+
+                        <button type="submit" class="quiz-container" onclick="quizSubmition(event)">Abgeben</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://kit.fontawesome.com/bad7f7f5d4.js" crossorigin="anonymous"></script>
+    <script src="../../js/solveQuiz.js"></script>
+    <script>
+        const quizID = 'CSS Quiz Level 3';
+    </script>
+</body>
+</html>
